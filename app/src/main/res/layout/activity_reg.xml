@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegActivity">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="160dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/phone"
+                android:hint="手机号"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/login_icon_phone_n"
+                android:textColorHint="#ffffff"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/password"
+                android:hint="注册密码"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/login_icon_lock_n"
+                android:textColorHint="#ffffff"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cb_eye"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:background="@drawable/login_icon_eye_n"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:text="已有账户?立即登录"
+                android:onClick="back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:text="注册"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:textColor="#ff5f71"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:onClick="register"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
